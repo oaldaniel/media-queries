@@ -1,0 +1,44 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.a,.b,.c{
+    width: 25%;
+    height: 100px;
+    color: darkmagenta;
+    font-size: 4em;
+    text-align: center;
+    line-height: 100px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.a{
+    background-color: lightgreen;
+    margin-left: 10%;
+}
+
+.b{
+    background-color: lightcoral;
+}
+
+.c{
+    background-color: lightskyblue;
+}
+
+/*media queries para que se vean los bloques uno debajo del otro en móviles */
+
+@media (max-width:618px){
+    .a,.b,.c{
+        width: 80%;
+
+        height: 50px;
+        font-size: 2em;
+        line-height: 50px;
+        margin-left: 10%;
+    }
+}
